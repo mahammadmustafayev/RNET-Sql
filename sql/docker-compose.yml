@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+ sql-server-db:
+  container_name: mssql_northwind 
+  image: mcr.microsoft.com/mssql/server:2022-latest
+  ports:
+    - "1433:1433"
+  environment:
+    SA_PASSWORD: "Alaska2017"
+    ACCEPT_EULA: "Y"
